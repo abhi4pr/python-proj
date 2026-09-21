@@ -6,3 +6,4 @@
 - when endpoints are same then api order matters
 - in path params url and function both accept id
 - in query params only function accept ids
+- we can import status for send status codes in response
