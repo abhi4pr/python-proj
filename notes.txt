@@ -1,0 +1,8 @@
+- install python
+- create virtual environment using python3 -m venv venv
+- use source/venv/bin/activate
+- uvicorn main:app --reload used to start the server
+- /docs and /redoc urls are used to open swagger
+- when endpoints are same then api order matters
+- in path params url and function both accept id
+- in query params only function accept ids
