@@ -10,3 +10,4 @@
 - tags used to diffrentiate apis in swagger
 - we can also combine path and query params in one api
 - we can also use summary and description to explain api working
+- when u add prefix for routing remove that prefix from api urls
