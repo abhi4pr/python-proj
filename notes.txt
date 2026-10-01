@@ -11,3 +11,6 @@
 - we can also combine path and query params in one api
 - we can also use summary and description to explain api working
 - when u add prefix for routing remove that prefix from api urls
+- parameter metadata used to show things in docs using Query like, alias or deprecated
+- ... means ellipsis used to make any field non optional
+- Depends use to access reusable functions in files

@@ -17,3 +17,6 @@ def get_user(id:int, response: Response):
     else:
         response.status_code = status.HTTP_200_OK
         return {'message':f'user with id {id}'}
+
+def required_functionality():
+    return{ 'message': 'this is required functionality'}
