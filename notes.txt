@@ -17,3 +17,4 @@
 - to install any lib type/run pip install libname
 - to come out from venv type/run deactivate
 - you can download any db management tool like tableplus, beekeeper etc
+- model is used to give shape of db table and schema is use to shape for req and res
