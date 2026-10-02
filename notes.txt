@@ -14,3 +14,6 @@
 - parameter metadata used to show things in docs using Query like, alias or deprecated
 - ... means ellipsis used to make any field non optional
 - Depends use to access reusable functions in files
+- to install any lib type/run pip install libname
+- to come out from venv type/run deactivate
+- you can download any db management tool like tableplus, beekeeper etc
