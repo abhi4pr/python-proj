@@ -1,12 +1,14 @@
 from fastapi import FastAPI, status, Response
 from router import blogs
 from router import users
+from router import articles
 from db import models
 from db.database import engine
 
 app = FastAPI()
 app.include_router(blogs.router)
 app.include_router(users.router)
+app.include_router(articles.router)
 
 @app.get('/hello', tags=['hello'])
 def index():
