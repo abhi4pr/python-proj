@@ -26,4 +26,7 @@ def create_article(request: ArticleBase, db: Session = Depends(get_db)):
 
 @router.get('/get_article/{id}', response_model=ArticleDisplay, tags=['articles'])
 def get_article(id: int, db: Session = Depends(get_db)):
-    return db.query(DbArticles).filter(DbArticles.id == id).first()
+    article = db.query(DbArticles).filter(DbArticles.id == id).first()
+    if not article:
+        raise HTTPException(status_code = status.HTTP_404_NOT_FOUND, detail=f'article not found with id {id}')
+    return article

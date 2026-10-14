@@ -19,3 +19,4 @@
 - you can download any db management tool like tableplus, beekeeper etc
 - model is used to give shape of db table and schema is use to shape for req and res
 - when u make relationship need to specify in models
+- to get data from Form-data, pass Form as function arg with ellipsis and install python-multipart
