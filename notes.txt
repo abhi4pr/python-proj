@@ -21,3 +21,4 @@
 - when u make relationship need to specify in models
 - to get data from Form-data, pass Form as function arg with ellipsis and install python-multipart
 - python-jose use to use jwt in python apps
+- pass current_user as function params for api authentication
