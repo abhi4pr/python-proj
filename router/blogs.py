@@ -3,6 +3,7 @@ from fastapi import APIRouter, Query, Body
 from fastapi import FastAPI, status, Response, Depends
 from pydantic import BaseModel
 from router.users import required_functionality
+from custom_log import log
 
 router = APIRouter(
     prefix='/blog',
@@ -20,6 +21,7 @@ def get_all_blogs(req_parameter: dict = Depends(required_functionality)):
 
 @router.get('/{id}', status_code=status.HTTP_200_OK, tags=['blogs'])
 def get_blog(id:int, response: Response):
+    log('apicall', f'get blog api with id {id}')
     if id > 5:
         response.status_code = status.HTTP_404_NOT_FOUND
         return {'error':f'blog {id} not found'}

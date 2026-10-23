@@ -22,3 +22,9 @@
 - to get data from Form-data, pass Form as function arg with ellipsis and install python-multipart
 - python-jose use to use jwt in python apps
 - pass current_user as function params for api authentication
+- debugging -> stop the running server, 
+    then debug fast api using ctrl shift P that will start a debugger server,
+    add breakpoints using red dots,
+    now hit the api and see all in vs codes
+- request and pytest lib are required for testing
+- to run test files, run command pytest in terminal
