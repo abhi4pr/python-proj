@@ -28,3 +28,6 @@
     now hit the api and see all in vs codes
 - request and pytest lib are required for testing
 - to run test files, run command pytest in terminal
+- no external lib use for uploading files in python
+- shutil and w+ are use file management in python
+- aiofiles use to server local files using urls, need to call in main.py file
